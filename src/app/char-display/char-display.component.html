@@ -1,0 +1,22 @@
+<div class="list-group-item list-group-item-info">
+    <ul>
+        <li class="list-group-item list-group-item-light" *ngFor = "let char of characters">{{char.name}}: {{char.gender}}, {{char.age}}</li>
+    </ul>
+</div>
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Character Name</th>
+        <th scope="col">Character Name</th>
+        <th scope="col">Type of Relationship</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let ship of relationships">
+        <td>{{ship.firstChar}}</td>
+        <td>{{ship.secondChar}}</td>
+        <td>{{ship.type}}</td>
+      </tr>
+    </tbody>
+  </table>
