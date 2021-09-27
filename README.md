@@ -5,7 +5,7 @@ Generates cast of characters with personalities and relationships
 - ~~Create repo~~
 - ~~Create character generator which creates character object containing a few random traits~~
 - ~~Create cast generator which sets basic relationships between a few generated characters~~
-- Create web app which allows user to generate cast
+- ~~Create web app which allows user to generate cast~~
 - Add functionality to save generated cast
 - Add functionality to adjust randomness (set weight or otherwise adjust some options)
 - Allow user to add character traits (Adjust character generator to use user traits in creation)
