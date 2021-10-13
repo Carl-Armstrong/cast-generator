@@ -4,14 +4,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CharDisplayComponent } from './char-display/char-display.component';
 import { FooterComponent } from './footer/footer.component';
-import { FaceComponent } from './face/face.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CharDisplayComponent,
-    FooterComponent,
-    FaceComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule
