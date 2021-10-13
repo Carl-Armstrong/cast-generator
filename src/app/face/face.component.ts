@@ -46,23 +46,4 @@ export class FaceComponent implements OnInit {
     return displayFace;
   }
   
-  // async getFace()
-  // {
-  //   let facesReturned;
-
-  //   facesReturned = await fetch('https://tinyfac.es/api/data?limit=50&quality=0').then(function (response) {
-  //     if (response.status >= 400) {
-  //       throw new Error ("Bad response");
-  //     }else {
-  //       return response.json();
-  //     }
-  //   })
-
-  //   return facesReturned;
-  // }
-
-  // pickFace(jsonData: any) {
-  //   let index: number = Math.floor(Math.random() * jsonData.length);
-  //   return jsonData[index];
-  // }
 }
