@@ -30,8 +30,10 @@ export function setRelationships(castArray: ICharacter[]) {
     A strictly random assignment of relationship types has produced too many creepy relationships or unlikely relationships. This
     list will identify inappropriate relationships. More should be added if they are noted.
 
-    * Minors and adults in romantic relationships - especially very young minors
-    * Adult relationships that stretch belief. Like 90 year old with 30 year old. These are feasible, but not as often as has been occuring.
+    * Minors and adults in romantic relationships - especially very young minors - FIXED
+    * Adult relationships that stretch belief. Like 90 year old with 30 year old. These are feasible, but not as often as has been occuring. - FIXED
+    * Children do not usually have jobs and shouldn't be anyone's work mate
+    * Parent/child relationships don't usually have more than 40 year age gaps
 */
 
 function setRelType(charA: ICharacter, charB: ICharacter)

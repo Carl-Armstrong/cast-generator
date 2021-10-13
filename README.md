@@ -1,7 +1,8 @@
 # cast_generator
 Generates cast of characters with personalities and relationships
+Can be viewed at (https://carl-armstrong.github.io/cast-generator/)
 
-# creation plan
+# TODO list
 - ~~Create repo~~
 - ~~Create character generator which creates character object containing a few random traits~~
 - ~~Create cast generator which sets basic relationships between a few generated characters~~
@@ -14,7 +15,9 @@ Generates cast of characters with personalities and relationships
 - Allow user to toggle traits on and off
 - Create relationship preferences (All family/no family/love triangle/no romance/etc)
 - Randomly get names from database or allow user to set
-- Display randomly generated images with each character
+- ~~Display randomly generated images with each character~~
+- Find better api for generating faces... seriously
+- Faces should match gender when gender is provided
 
 
 

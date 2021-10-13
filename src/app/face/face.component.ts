@@ -20,8 +20,9 @@ export class FaceComponent implements OnInit {
     window.fetch(facesUrl).then( (response) => {
       response.json().then( (data: string | any[]) => {
         
+        // originally was fetching 50 objects from the api, but changed the limit to 1. Left the for loop in because it's working
         for(let i=0; i < data.length; i++) {
-          let face = new IFace(data[i].last_name, data[i].gender, data[i].approved, data[i].first_name, data[i].updated_at, data[i].created_at, data[i].url, data[i].id, data[i].source);
+          let face = new IFace(data[i].last_name, data[i].gender, data[i].first_name, data[i].url);
           this.sourceList.push(face);
         }
 
@@ -33,6 +34,14 @@ export class FaceComponent implements OnInit {
   }
 
   getFace(): string {
+    // check if nothing was fetched
+    if (this.sourceList.length == 0)
+    {
+      // if json was not fetched, give it a stock image for a face
+      return "/assets/generic.png";
+    }
+
+    // just uses 0 index because the fetch request was changed to only ask for one
     let displayFace = this.sourceList[0].url;
     return displayFace;
   }

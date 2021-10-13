@@ -11,27 +11,17 @@ export class IFace {
     "source":{"created_at":1627199913.878633,"name":"Devin Halladay","id":45,"updated_at":1627199913.878633,"platform":"facebook"}}
     */
 
+    // I don't need all of the provided data from the json, but I will keep some in case I want them later
     last_name: string;
     gender: string;
-    approved: boolean;
     first_name: string;
-    updated_at: number;
-    created_at: number;
     url: string;
-    id: number;
-    source: object;
 
-    constructor(last_name: string, gender: string, approved: boolean, first_name: string, updated_at: number, created_at: number, url: string,
-        id: number, source: object) {
+    constructor(last_name: string, gender: string, first_name: string, url: string) {
             this.last_name = last_name;
             this.gender = gender;
-            this.approved = approved;
             this.first_name = first_name;
-            this.updated_at = updated_at;
-            this. created_at = created_at;
             this.url = url;
-            this.id = id;
-            this.source = source;
             
 
     }
